@@ -12,16 +12,16 @@ public class Expression {
 
 	static String findReplace(Expression exp, String str) {
 		
-		return str.indexOf(exp.phrase) !=-1? str.replace(exp.phrase, exp.abbr): str;
+		return str.indexOf(exp.abbr) !=-1? str.replace(exp.abbr, exp.phrase): str;
 	}
 	
 	public static void main(String[] args) {
 		String result;
 		String str = new String("When developing a roulette game a while ago, I talked with an ex-colleague "
-				+ "(I TYM PODOBNE that worked for an na przyk³ad online gambling company "
-				+ "at the time) miêdzy innymi that  NA PRZYK£AD I tak dalej pointed me to the fact that they have special software to randomize."
-				+ "That made me think and also na przyK³AD wonder. There is nothing more random than using dices, "
-				+ "so what if we could use real dices in a virtual I tym podobne game?");
+				+ "(ITP. that worked for an NP. online gambling company "
+				+ "at the time) m.in that NP. Itd. pointed me to the fact that they have special software to randomize."
+				+ "That made me think and also np. wonder. There is nothing more random than using dices, "
+				+ "so what if we could use real dices in a virtual Itd. game?");
 		
 		String strL = str.toLowerCase();
 		
