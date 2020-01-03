@@ -6,7 +6,7 @@ package pl.put.poznan.transformer.logic;
 
 public class TextShortsExpand extends TextDecorator {
 
-    /** Class constructor
+    /** Class constructor lol
         @param decoratedText The text we will be working with*/
     public TextShortsExpand(TextTransformer decoratedText){
         super(decoratedText);
