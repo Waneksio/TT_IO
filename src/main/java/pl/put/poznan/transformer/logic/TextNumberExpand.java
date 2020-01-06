@@ -1,14 +1,25 @@
 package pl.put.poznan.transformer.logic;
 
+/**@author PanPastwa
+ *
+ * @version 1.0
+ * Provides methods for writing numbers
+ */
 public class TextNumberExpand extends TextDecorator {
 
+    /**Class constructor
+     * @param decoratedText The text we will be working with
+     */
     public TextNumberExpand(TextTransformer decoratedText){
         super(decoratedText);
     }
 
+    /**Changes numbers in text into words
+     *
+     * @param text String of characters to process
+     * @return Transformed text
+     */
     public String transform(String text){
-        // Metoda zwraca tekst z zmiana liczb na tekst
-        // np. Wplac 100 zl --> Wplac sto zl
         String output_string = text;
         String str = text;
         str = str.replaceAll("[^-?0-9.]+", " ");
@@ -39,6 +50,11 @@ public class TextNumberExpand extends TextDecorator {
         return output_string;
     }
 
+    /** Changes number to word
+     *
+     * @param s Number to convert
+     * @return Word describing a given number
+     */
     public static String zamiana(String s){
 
         int number_of_digits = s.length();

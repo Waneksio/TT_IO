@@ -1,11 +1,25 @@
 package pl.put.poznan.transformer.logic;
 
+/**@author Beata
+ *
+ * @version 1.1
+ * provides methods for making shortcuts
+ */
 public class TextWordsToShorts extends TextDecorator {
 
+    /**Class constructor
+     *
+     * @param decoratedText TextTransformer object with decorated text
+     */
     public TextWordsToShorts(TextTransformer decoratedText){
         super(decoratedText);
     }
 
+    /**Transforms words into shorts
+     *
+     * @param text String of characters to process
+     * @return Transformed text
+     */
     public String transform(String text){
         // Zwijanie skrotow
         // np. na przyklad --> np.
