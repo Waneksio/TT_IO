@@ -18,8 +18,8 @@ public class SignsConverter extends TextDecorator{
      * @return Transformed text
      */
     public String transform(String text){
-        text = text.replace("&", "\\&");
         text = text.replace("\\", "\\backslash");
+        text = text.replace("&", "\\&");
         text = text.replace("%", "\\%");
         text = text.replace("#", "\\#");
         text = text.replace("^", "\\^");
