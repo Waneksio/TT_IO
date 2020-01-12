@@ -26,8 +26,8 @@ public class TextWordsToShorts extends TextDecorator {
         String result;
 
         String textL = text.toLowerCase();
-        text = text.replace("między innymi", "m.in").replace("Między innymi", "M.in").replace("MIĘDZY INNYMI", "M.IN");
-        text = text.replace("na przykład", "np.").replace("Na przykład", "Np.").replace("NA PRZYKŁAD", "NP.");
+        text = text.replace("miedzy innymi", "m.in").replace("Miedzy innymi", "M.in").replace("MIEDZY INNYMI", "M.IN");
+        text = text.replace("na przyklad", "np.").replace("Na przyklad", "Np.").replace("NA PRZYKLAD", "NP.");
         text = text.replace("i tak dalej", "itd.").replace("I tak dalej", "Itd.").replace("I TAK DALEJ", "ITD.");
         text = text.replace("i tym podobne", "itp.").replace("I tym podobne", "Itp.").replace("I TYM PODOBNE", "ITP.");
 

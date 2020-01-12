@@ -23,7 +23,7 @@ public class TextShortsExpand extends TextDecorator {
      */
     public String transform(String text){
         text = text.replace("prof.", "profesor").replace("Prof.", "Profesor");
-        text = text.replace("np.", 	"na przykład").replace("Np.", "Na przykład");
+        text = text.replace("np.", 	"na przyklad").replace("Np.", "Na przyklad");
         text = text.replace("dr", "doktor").replace("Dr", "Doktor");
         text = text.replace("itp.", "i tym podobne").replace("Itp.", "I tym podobne");
         return text;
