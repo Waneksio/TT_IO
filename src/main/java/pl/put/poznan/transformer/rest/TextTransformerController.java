@@ -9,6 +9,16 @@ public class TextTransformerController {
 
     private static final Logger logger = LoggerFactory.getLogger(TextTransformerController.class);
 
+    // Usuniecie powtorzen
+    @RequestMapping(value = "/repetitionsremoved/{text:.+}", method = RequestMethod.GET, produces = "application/json")
+    public String getRepetitionsRemoved(@PathVariable String text) {
+        // log the parameters
+        logger.debug(text);
+
+        // Return transformed text
+        return new TextRepetitionsRemoved(new TextTransform()).transform(text);
+    }
+
     // Rozwiniecie liczb na slowa
     @RequestMapping(value = "/numberexpand/{text:.+}", method = RequestMethod.GET, produces = "application/json")
     public String getNumberExpand(@PathVariable String text) {

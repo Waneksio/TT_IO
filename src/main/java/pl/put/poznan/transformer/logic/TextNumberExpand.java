@@ -32,7 +32,7 @@ public class TextNumberExpand extends TextDecorator {
                     String fraction_part = zamiana(s.substring(s.indexOf(".") + 1));
                     nowy_tekst = decimal_part + " i " + fraction_part;
                     if (s.substring(s.indexOf(".") + 1).length() == 1) {
-                        nowy_tekst = nowy_tekst + " dziesiatych";
+                        nowy_tekst = nowy_tekst + " dziesiątych";
                     } else if (s.substring(s.indexOf(".") + 1).length() == 2) {
                         nowy_tekst = nowy_tekst + " setnych";
                     }
@@ -60,11 +60,11 @@ public class TextNumberExpand extends TextDecorator {
         int number_of_digits = s.length();
         int number_in_text;
         String nowy_tekst = "";
-        String[] data = {"sto ", "dwiescie ", "trzysta ", "czterysta ", "piecset ",
-                "szescset ", "siedemset ", "osiemset ", "dziewiecset ", "dzisiec", "dwadziescia", "trzydziesci", "czterdzisci",
-                "piecdziesiat", "szescdziesiat", "siedemdziesiat", "osiemdziesiat", "dziewiecdziesiat",
-                "jedenascie", "dwanascie", "trzynascie", "czternascie", "pietnascie", "szesnascie", "siedemnascie", "osiemnascie",
-                "dziewietnascie", "jeden", "dwa", "trzy", "cztery", "piec", "szesc", "siedem", "osiem", "dziewiec"};
+        String[] data = {"sto ", "dwieście ", "trzysta ", "czterysta ", "pięćset ",
+                "sześćset ", "siedemset ", "osiemset ", "dziewięćset ", "dzisięć", "dwadzieścia", "trzydzieści", "czterdziści",
+                "pięćdziesiąt", "sześćdziesiąt", "siedemdziesiąt", "osiemdziesiąt", "dziewięćdziesiąt",
+                "jedenaście", "dwanaście", "trzynaście", "czternaście", "piętnaście", "szesnaście", "siedemnaście", "osiemnaście",
+                "dziewiętnaście", "jeden", "dwa", "trzy", "cztery", "pięć", "sześć", "siedem", "osiem", "dziewięć"};
 
         if (number_of_digits > 3){
             return s;
@@ -96,7 +96,7 @@ public class TextNumberExpand extends TextDecorator {
                 else
                     number_in_text = Character.getNumericValue(s.charAt(1));
                 if (number_in_text == 0)
-                    nowy_tekst = nowy_tekst + "dziesiec";
+                    nowy_tekst = nowy_tekst + "dziesięć";
                 else {
                     nowy_tekst = nowy_tekst + data[17+number_in_text];
                 }
