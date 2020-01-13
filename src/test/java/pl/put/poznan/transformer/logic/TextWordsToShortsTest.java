@@ -18,9 +18,9 @@ public class TextWordsToShortsTest {
     public void test_transform(){
         assertEquals(textWordsToShorts.transform(""), "");
         assertEquals(textWordsToShorts.transform("abcd"), "abcd");
-        assertEquals(textWordsToShorts.transform("Między innymi ninja"), "M.in ninja");
-        assertEquals(textWordsToShorts.transform("Ninja na przykład"), "Ninja np.");
-        assertEquals(textWordsToShorts.transform("Na przykład ninja i tak dalej"), "Np. ninja itd.");
+        assertEquals(textWordsToShorts.transform("Miedzy innymi ninja"), "M.in ninja");
+        assertEquals(textWordsToShorts.transform("Ninja na przyklad"), "Ninja np.");
+        assertEquals(textWordsToShorts.transform("Na przyklad ninja i tak dalej"), "Np. ninja itd.");
     }
 
 }

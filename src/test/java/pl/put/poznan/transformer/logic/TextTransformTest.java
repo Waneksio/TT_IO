@@ -27,7 +27,7 @@ public class TextTransformTest {
         assertEquals(textTransform.transform(""), "");
         assertEquals(textTransform.transform("a"), "a");
         assertEquals(textTransform.transform("abcd"), "abcd");
-        assertEquals(textTransform.transform("ninja i zapałki"), "ninja i zapałki");
+        assertEquals(textTransform.transform("ninja i zapalki"), "ninja i zapalki");
         assertEquals(textTransform.transform("p12asd"), "p12asd");
 
         // Mock tests
