@@ -49,6 +49,50 @@ public class TextTransformerController {
         return new TextWordsToShorts(new TextTransform()).transform(text);
     }
 
+    @RequestMapping(value = "/capitalize/{text:.+}", method = RequestMethod.GET, produces = "application/json")
+    public String getCapitalize(@PathVariable String text) {
+        // log the parameters
+        logger.debug(text);
+
+        // Return transformed text
+        return new Capitalizer(new TextTransform()).transform(text);
+    }
+
+    @RequestMapping(value = "/lower/{text:.+}", method = RequestMethod.GET, produces = "application/json")
+    public String getLower(@PathVariable String text) {
+        // log the parameters
+        logger.debug(text);
+
+        // Return transformed text
+        return new Lowerer(new TextTransform()).transform(text);
+    }
+
+    @RequestMapping(value = "/reverse/{text:.+}", method = RequestMethod.GET, produces = "application/json")
+    public String getReverse(@PathVariable String text) {
+        // log the parameters
+        logger.debug(text);
+
+        // Return transformed text
+        return new Reverser(new TextTransform()).transform(text);
+    }
+
+    @RequestMapping(value = "/transformSigns/{text:.+}", method = RequestMethod.GET, produces = "application/json")
+    public String getSingsTransform(@PathVariable String text) {
+        // log the parameters
+        logger.debug(text);
+
+        // Return transformed text
+        return new SignsConverter(new TextTransform()).transform(text);
+    }
+
+    @RequestMapping(value = "/upper/{text:.+}", method = RequestMethod.GET, produces = "application/json")
+    public String getUper(@PathVariable String text) {
+        // log the parameters
+        logger.debug(text);
+
+        // Return transformed text
+        return new Upperer(new TextTransform()).transform(text);
+    }
 }
 
 
