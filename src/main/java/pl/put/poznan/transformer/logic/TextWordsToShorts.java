@@ -32,7 +32,7 @@ public class TextWordsToShorts extends TextDecorator {
         text = text.replace("i tym podobne", "itp.").replace("I tym podobne", "Itp.").replace("I TYM PODOBNE", "ITP.");
 
         textL = textL.replace("miedzy innymi", "m.in");
-        textL = textL.replace("na przykład", "np.");
+        textL = textL.replace("na przyklad", "np.");
         textL = textL.replace("i tak dalej", "itd.");
         textL = textL.replace("i tym podobne", "itp.");
 
